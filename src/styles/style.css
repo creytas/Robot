@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e6e6ff;    
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-loader{
+    width: 90vw;
+    height: 100vh;
+    position: relative;
+}
+.page--color{
+    background-color: #e6e6ff;
+}
+.robot{
+    width: 225px;
+}
+.card-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: fit-content;
+    height: 336px;
+    margin: 22px;
+    padding: 8px;
+    border-radius: 7px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px black;
+    transform: scale(1.1);
+}
+.card--color{
+    border: 1px solid #9EEBCF;
+    background-color: #9EEBCF;
+}
+.header-title{
+    text-align: center;
+    font-family:  'SEGA LOGO FONT';
+    font-size: 24px;
+    color: #64CCC5;
+    margin: 20px auto;
+}
+.header-title h1{
+    font-weight: normal;
+}
+
+.card-centered-text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.card-centered-text h2{
+    font-weight: 400;
+}
+.card-centered-text p{
+    font-weight: 100;
+}
+.searchbar{
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid black;
+    background-color: #ebf6fd;
+    font-family:  'Roboto', sans-serif;
+    font-size: 20px;
+}
+.searchbar:focus{
+    outline: none;
+    box-shadow: 0px 0px 4px black;
+}
+.sk-cube-grid {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #28d394;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+.loading-text{
+    position: absolute;
+    top: 55.5%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    margin: 0px auto;
+    text-align: center;
+    font-family:  'SEGA LOGO FONT';
+    font-size: 24px;
+    font-weight: normal;
+    color: #28d394;
+}
